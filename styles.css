@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .hero-container {
@@ -61,22 +62,6 @@ li:hover {
     -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-@-webkit-keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
 .arrows path.a1 {
     animation-delay:  -1s;
     -webkit-animation-delay: -1s;
@@ -122,6 +107,12 @@ li:hover {
     height: auto;
     border-radius: 50%;
     border: 4px solid #d21617;
+    transition: 1.0s;
+}
+
+.profile-image:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .name-text {
@@ -153,6 +144,13 @@ li:hover {
     font-family: 'Oswald', sans-serif;
     margin-top: 35px;
     cursor: pointer;
+    transition: 1.06s;
+}
+
+.profile-button:hover{
+    background-color: goldenrod;
+    color: black;
+    font-size: 18px;
 }
 
 .divider {
@@ -177,4 +175,52 @@ li:hover {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 17px;
+}
+
+@media (width: 360px) and (width: 800px){
+    
+    .hero-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url('./nubelson-fernandes-iE71-TMrrkE-unsplash\ \(1\).jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;   
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .profile-sinopse {
+        width: 100px;
+        display: flex;
+
+    }
+    
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
 }
